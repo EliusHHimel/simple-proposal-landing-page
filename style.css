@@ -1,0 +1,43 @@
+body{
+    text-align: center;
+    background: #3a6186;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #89253e, #3a6186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.text{
+    position: absolute;
+    visibility: hidden;
+    text-align: left;
+    margin-left: -50px;
+    color:ghostwhite;
+}
+.upper-text{
+    position: absolute;
+    margin-top: -150px;
+    margin-left: -400px;
+    font-size: 70px;
+    color: darkgrey;
+
+}
+.btn{
+    color: cornsilk;
+    margin-top: 220px;
+    padding: 10px 40px;
+    background-color: crimson;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.btn:focus{
+    margin-left: -120%;
+}
+.btn:focus .upper-text{
+    visibility: hidden;
+}
+.btn:focus .text {
+    visibility: visible;
+    margin-left: 600px;
+    margin-top: -40px;
+    font-size: 100px;
+}
